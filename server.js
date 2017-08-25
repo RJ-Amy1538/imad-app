@@ -119,6 +119,7 @@ app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
 
+ var names = [];
 app.get('/submit-name/:name', function(req, res) {
     //get name from the request
   var  name = req.params.name;
