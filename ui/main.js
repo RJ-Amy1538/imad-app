@@ -6,7 +6,7 @@ var element = document.getElementById('main-text');
  element.innerHTML = 'Welcome to Web-App';
  
  //move the image
- var img=document.getElementById('img');
+ var img=document.getElementById('madi');
  img.onclick = function() {
      img.style.margineleft= '100px';
  }
