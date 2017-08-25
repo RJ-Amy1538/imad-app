@@ -21,7 +21,7 @@ button.onclick = function () {
   //make a request
   request.open('GET', "http://rockstar1538.imad.hasura-app.io/counter", true);
   request.send(null);
-
+};
 
 //submit name
 var nameInput =document.getElementById("name");
@@ -38,5 +38,4 @@ submit.onclick = function () {
   }
   var ul = document.getElementById("namelist");
   ul.innerHTML = list;
-};
 };
