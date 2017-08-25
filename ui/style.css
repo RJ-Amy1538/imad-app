@@ -16,10 +16,10 @@ body {
 }
 
 .img-medium {
-    height: 200px;
+    height: 100px;
 }
 
-      .container {
+    .container {
     max-width: 800px;
     margin: 0 auto;
     color: #d63e0e;
