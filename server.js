@@ -121,11 +121,11 @@ app.get('/ui/madi.png', function (req, res) {
 
 app.get('/submit-name/:name', function(req, res) {
     //get name from the request
-  var  name = req.param.name; // todo
+  var  name = req.params.name;
   
   names.push(name);
   // JSON java script object notation
-  res.send(JSON.stringify(names)); //todo
+  res.send(JSON.stringify(names)); 
 });
 
 
