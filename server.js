@@ -132,7 +132,7 @@ app.get('/submit-name', function(req, res) {
   res.send(JSON.stringify(names)); 
 });
 
-app.get('/articles:articleName', function (req, res) {
+app.get('/articles/:articleName', function (req, res) {
    //articleName==article-one
    //article[articleName]== content object of article one
    
