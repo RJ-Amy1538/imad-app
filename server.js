@@ -15,8 +15,8 @@ app.use(morgan('combined'));
 
 var articles = {
     'article-one': {
-    title: 'Webapp: Amit Raj',
-    heading: 'Introduction:',
+    title: 'introduction',
+    heading: 'Introduction: Amit Raj',
     date: '25 Aug,2017',
     content: `
             <p>First Time I am going to develop an App that will help people to reach the another side of world.
@@ -29,8 +29,8 @@ var articles = {
             </p>`
     },
     'article-two':{ 
-    title: 'Introduction: Amit Raj',
-    heading: 'Status of App:',
+    title: 'status-of-app',
+    heading: 'Introduction: The Webapp',
     date: '25 Aug,2017',
     content: `
             <p>App is going to launch soon. Coding is going on.
@@ -43,8 +43,8 @@ var articles = {
             </p>`
 },
     'article-three':{ 
-    title: 'About: Amit Raj',
-    heading: 'About the Webapp:',
+    title: 'about-the-Webapp',
+    heading: 'About: The Webapp:',
     date: '25 Aug,2017',
     content: `
             <p>Start of a new begining. Coding a webapp to serve the customers.
