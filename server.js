@@ -188,7 +188,7 @@ return htmlTemplate;
 
 app.get('/logout', function (req, res) {
    delete req.session.auth;
-   res.send('logged out successfully')
+   res.send('logged out successfully');
 });
     var pool = new Pool(config);
 app.get('/test-db', function (req, res) {
