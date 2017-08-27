@@ -102,7 +102,7 @@ return htmlTemplate;
  
  function hash (input, salt){
    //How do we create a Hash?
-   var hashed = crypto.pbkdf25ync(input, salt, 10000, 512, 'sha512');
+   var hashed = crypto.pbkdf2Sync(input, salt, 10000, 512, 'sha512');
    return hashed.toString('hex');
      }
  
