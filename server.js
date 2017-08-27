@@ -157,6 +157,8 @@ return htmlTemplate;
                 var hashedPassword = hash(password, salt); // Creating a hash based on the password submitted and the original salt
                 if (hashedPassword === dbString) {
                    res.send('user sucessfully loged in');
+                   
+                   // set a session
                 }
                 else{
                 res.send(403).send('username/password is invalid');
