@@ -20,50 +20,7 @@ app.use(session({
     secret: 'SomeRandomSecretValue',
     cookie: {maxAge: 1000 * 60 * 60 * 24 * 30}
 }));
-var articles = {
-    'article-one': {
-    title: 'introduction',
-    heading: 'Introduction: Amit Raj',
-    date: '25 Aug,2017',
-    content: `
-            <p>First Time I am going to develop an App that will help people to reach the another side of world.
-            </p>
-            <p>
-                THANK YOU.
-            </p>
-            <p>
-                KEEP SUPPORTING.
-            </p>`
-    },
-    'article-two':{ 
-    title: 'status-of-app',
-    heading: 'Introduction: The Webapp',
-    date: '25 Aug,2017',
-    content: `
-            <p>App is going to launch soon. Coding is going on.
-            </p>
-            <p>
-                THANK YOU.
-            </p>
-            <p>
-                KEEP SUPPORTING.
-            </p>`
-},
-    'article-three':{ 
-    title: 'about-the-Webapp',
-    heading: 'About: The Webapp:',
-    date: '25 Aug,2017',
-    content: `
-            <p>Start of a new begining. Coding a webapp to serve the customers.
-            </p>
-            <p>
-                THANK YOU.
-            </p>
-            <p>
-                KEEP SUPPORTING.
-            </p>`
-}
-    };
+
 
  function createTemplate (data) {
      var title=data.title;
@@ -158,7 +115,7 @@ return htmlTemplate;
         }
         else{
             if(result.rows.length === 0) {
-                res.send(403).send('username/password is invalid');
+                res.status(403).send('username/password is invalid');
             } else{
                 // match the password
                 var dbString = result.rows[0].password;
@@ -175,7 +132,7 @@ return htmlTemplate;
                     
                 }
                 else{
-                res.send(403).send('username/password is invalid');
+                res.status(403).send('username/password is invalid');
             }
         }
         }
