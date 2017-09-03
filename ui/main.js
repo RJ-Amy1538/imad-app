@@ -58,11 +58,11 @@
         request.onreadystatechange = function () {
           if (request.readyState === XMLHttpRequest.DONE) {
               // Take some action
-              if (request.status === 200) {
-                  alert('User created successfully');
+              if (request.status === 404) {
+                  alert('User could not be registered');
                   register.value = 'Registered!';
               } else {
-                  alert('Could not register the user');
+                  alert('registered successfully.');
                   register.value = 'Register';
               }
           }
